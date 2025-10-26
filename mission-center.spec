@@ -15,6 +15,7 @@ Source1:	vendor.tar.xz
 Source2:	https://gitlab.com/mission-center-devs/gng/-/archive/gng-319d95d29cbc3c373ae61cff228e8440fbaadbbb.tar.bz2
 
 BuildRequires:	meson
+BuildRequires:  gettext
 BuildRequires:	rust-packaging
 BuildRequires:	protobuf-compiler
 BuildRequires:	pkgconfig(blueprint-compiler)

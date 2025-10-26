@@ -40,10 +40,10 @@ Monitor your CPU, Memory, Disk, Network and GPU usage with Mission Center.
 
 %prep
 %setup -q -n %{name}-v%{version} -a1 -a2
-%cargo_prep -v vendor
+
 
 cp -r gng-*/* subprojects/magpie
-
+%cargo_prep -v vendor
 %build
 %meson
 %meson_build

@@ -40,10 +40,21 @@ Monitor your CPU, Memory, Disk, Network and GPU usage with Mission Center.
 
 %prep
 %setup -q -n %{name}-v%{version} -a1 -a2
-
-
 cp -r gng-*/* subprojects/magpie
-%cargo_prep -v vendor
+cd subprojects
+cd magpie
+tar xf %{S:1}
+mkdir .cargo
+cat >>.cargo/config.toml <<EOF
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+EOF
+
+
 %build
 %meson
 %meson_build

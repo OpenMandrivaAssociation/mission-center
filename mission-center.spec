@@ -22,7 +22,7 @@ BuildRequires:	appstream
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libadwaita-1)
-BuildRequires:	python3dist(sqlite3)
+BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	python-gi
 # for magpie
 BuildRequires:	pkgconfig(udev)

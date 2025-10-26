@@ -25,6 +25,7 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	python-gi
+BuildRequires:  libxml2-utils
 # for magpie
 BuildRequires:	pkgconfig(udev)
 BuildRequires:	pkgconfig(libdrm)
